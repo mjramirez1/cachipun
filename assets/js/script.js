@@ -27,13 +27,13 @@ var player = prompt("Elige piedra, papel o tijera");
             alert("Escogiste papel");
             var machina = Math.floor(Math.random() * 3)  //elección random
             if (machina == piedra) {
-                alert("La máquina escogio tijera ¡GANASTE!")
+                alert(" La máquina escogió piedra ¡GANASTE!")
             }
             else if (machina == papel) {
-                alert(" La máquina escogió piedra ¡Empataste!")
+                alert(" La máquina escogió papel ¡Empataste!")
             }
             else if (machina == tijera) {
-                alert(" La máquina escogió papel ¡Perdiste!")
+                alert("La máquina escogio tijera ¡Perdiste!")
             }
             break;
 
@@ -41,13 +41,13 @@ var player = prompt("Elige piedra, papel o tijera");
             alert("Escogiste tijera");
             var machina = Math.floor(Math.random() * 3)  //elección random
             if (machina == piedra) {
-                alert(" La máquina escogió papel ¡Perdiste!")
+                alert(" La máquina escogió piedra ¡Perdiste!")
             }
             else if (machina == papel) {
-                alert("La máquina escogio tijera ¡GANASTE!")
+                alert(" La máquina escogió papel ¡GANASTE!")
             }
             else if (machina == tijera) {
-                alert(" La máquina escogió piedra ¡Empataste!")
+                alert("La máquina escogio tijera ¡Empataste!")
             }
             break;
     }
