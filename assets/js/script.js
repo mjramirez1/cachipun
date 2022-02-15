@@ -1,57 +1,57 @@
-const nombre = prompt("Bienvenido a cachipún contra la máquina, ingresa tu nombre: ");
-var fichas = prompt("¿Cuátos juegos quieres jugar?");
+const nombre = prompt('Bienvenido a cachipún contra la máquina, ingresa tu nombre: ');
+var fichas = prompt('¿Cuátos juegos quieres jugar?');
 const piedra = 0;
 const papel = 1;
 const tijera = 2;
 var fin = 0;
 
 while (fichas != fin) {
-var player = prompt("Elige piedra, papel o tijera");
+var player = prompt('Elige piedra, papel o tijera');
 
     switch (player) {
-        case "piedra":
-            alert("Escogiste piedra");
+        case 'piedra':
+            alert('Escogiste piedra');
             var machina = Math.floor(Math.random() * 3)  //elección random
             if (machina == piedra) {
-                alert(" La máquina escogió piedra ¡Empataste!")
+                alert(' La máquina escogió piedra ¡Empataste!')
             }
             else if (machina == papel) {
-                alert(" La máquina escogió papel ¡Perdiste!")
+                alert(' La máquina escogió papel ¡Perdiste!')
             }
             else if (machina == tijera) {
-                alert("La máquina escogio tijera ¡GANASTE!")
+                alert('La máquina escogio tijera ¡GANASTE!')
             }
             break;
 
-        case "papel":
-            alert("Escogiste papel");
+        case 'papel':
+            alert('Escogiste papel');
             var machina = Math.floor(Math.random() * 3)  //elección random
             if (machina == piedra) {
-                alert(" La máquina escogió piedra ¡GANASTE!")
+                alert(' La máquina escogió piedra ¡GANASTE!')
             }
             else if (machina == papel) {
-                alert(" La máquina escogió papel ¡Empataste!")
+                alert(' La máquina escogió papel ¡Empataste!')
             }
             else if (machina == tijera) {
-                alert("La máquina escogio tijera ¡Perdiste!")
+                alert('La máquina escogio tijera ¡Perdiste!')
             }
             break;
 
-        case "tijera":
-            alert("Escogiste tijera");
+        case 'tijera':
+            alert('Escogiste tijera');
             var machina = Math.floor(Math.random() * 3)  //elección random
             if (machina == piedra) {
-                alert(" La máquina escogió piedra ¡Perdiste!")
+                alert(' La máquina escogió piedra ¡Perdiste!')
             }
             else if (machina == papel) {
-                alert(" La máquina escogió papel ¡GANASTE!")
+                alert(' La máquina escogió papel ¡GANASTE!')
             }
             else if (machina == tijera) {
-                alert("La máquina escogio tijera ¡Empataste!")
+                alert('La máquina escogio tijera ¡Empataste!')
             }
             break;
     }
 
     fin = fin + 1
 }
-alert("Tus jugadas han terminado, actualiza para volver a jugar")
+alert( nombre + ' tus jugadas han terminado, actualiza para volver a jugar')
