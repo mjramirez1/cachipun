@@ -16,7 +16,7 @@ var empata = 0;
 
 while (fichas != fin) {
     var player = prompt('Elige piedra, papel o tijera'); // Elección jugador humano
-    var machina = Math.floor(Math.random() * 3) // Seleciión random del jugador pc
+    var machina = Math.floor(Math.random() * 3) // Selección random del jugador pc
 
     switch (player) {
         case 'piedra':
@@ -30,7 +30,7 @@ while (fichas != fin) {
                 pierde++
             }
             else if (machina === tijera) {
-                alert('La máquina escogio tijera ¡GANASTE!')
+                alert('La máquina escogió tijera ¡GANASTE!')
                 gana++
             }
             break;
@@ -46,7 +46,7 @@ while (fichas != fin) {
                 empata++
             }
             else if (machina === tijera) {
-                alert('La máquina escogio tijera ¡Perdiste!')
+                alert('La máquina escogió tijera ¡Perdiste!')
                 pierde++
             }
             break;
@@ -62,7 +62,7 @@ while (fichas != fin) {
                 gana++
             }
             else if (machina === tijera) {
-                alert('La máquina escogio tijera ¡Empataste!')
+                alert('La máquina escogió tijera ¡Empataste!')
                 empata++
             }
             break;
